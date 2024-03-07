@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatSidenavModule} from '@angular/material/sidenav';
+import { MatSidenavModule} from '@angular/material/sidenav';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
@@ -19,6 +19,8 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProductsHeaderComponent } from './pages/home/components/products-header/products-header.component';
+import { FiltersComponent } from './pages/home/components/filters/filters.component';
+import { ProductBoxComponent } from './pages/home/components/product-box/product-box.component';
 
 
 @NgModule({
@@ -26,7 +28,10 @@ import { ProductsHeaderComponent } from './pages/home/components/products-header
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    ProductsHeaderComponent
+    ProductsHeaderComponent,
+    FiltersComponent,
+    ProductBoxComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -44,6 +49,7 @@ import { ProductsHeaderComponent } from './pages/home/components/products-header
     MatTableModule,
     MatBadgeModule,
     MatSnackBarModule,
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
