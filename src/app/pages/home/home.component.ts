@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 const ROWS_HEIGHT: { [id:number]: number } = {1: 400, 3: 335, 4: 350};
 
@@ -9,6 +9,7 @@ const ROWS_HEIGHT: { [id:number]: number } = {1: 400, 3: 335, 4: 350};
  
 })
 export class HomeComponent implements OnInit {
+
 
   cols = 3;
   rowHeight = ROWS_HEIGHT[this.cols];
